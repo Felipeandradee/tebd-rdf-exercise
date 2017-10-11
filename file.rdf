@@ -1,44 +1,120 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
-  <rdf:Description rdf:about="http://paper/30_&amp;#x003BC;_A_">
-    <vcard:TITLE>30 &amp;#x003BC; A beam toroid</vcard:TITLE>
-    <vcard:ABSTRACT>A standard commercial toroid modified to operate in the zero flux mode has been applied to the monitoring of the 750 keV polarized proton beam at the Zero Gradient Synchrotron (ZGS). The beam parameters are: rise time - 3 ms, pulse width - 15 ms, current </vcard:ABSTRACT>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://paper/Applying_AHP_me">
-    <vcard:TITLE>Applying AHP method select online shopping platform</vcard:TITLE>
-    <vcard:ABSTRACT>This paper proposes a case of the traditional market retailers in central Taiwan. Applying Analytical Hierarchy Process (AHP) method is to find the best online shopping platform to begin e-commerce. Traditional retail market is usually the purchase store </vcard:ABSTRACT>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://paper/A_simple_dimmer">
-    <vcard:TITLE>A simple dimmer using a MOSFET for AC driven lamp</vcard:TITLE>
-    <vcard:ABSTRACT>This paper presents a simple dimmer using a MOSFET for AC driven lamp such as AC LED and incandescent lamp. The control method of the proposed dimmer is pulse width control (PWM) method. Compared with the conventional phase-controlled dimmer, the proposed</vcard:ABSTRACT>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://paper/Evaluating_the_">
+  <rdf:Description rdf:about="http://paper/Evaluating_the_potential_shielding_properties_of_periodic_metamaterial_slabs">
+    <vcard:AUTOR>
+      <rdf:Description rdf:about="http://autor/Fábio_Paulo_Padrão">
+        <vcard:NAME>Fábio Paulo Padrão</vcard:NAME>
+        <vcard:EMAIL>paes.ziraldo@uol.com.br</vcard:EMAIL>
+      </rdf:Description>
+    </vcard:AUTOR>
     <vcard:TITLE>Evaluating the potential shielding properties of periodic metamaterial slabs</vcard:TITLE>
     <vcard:ABSTRACT>Metamaterials can prove to be good candidates for shields in EMC applications where weight reduction is a challenge. Indeed metamaterial slabs can provide the same reflective properties as conventional metallic screens but with a lower density and reduced</vcard:ABSTRACT>
+    <vcard:AUTOR>
+      <rdf:Description rdf:about="http://autor/Sr._Benjamin_Caldeira">
+        <vcard:NAME>Sr. Benjamin Caldeira</vcard:NAME>
+        <vcard:EMAIL>obalestero@yahoo.com</vcard:EMAIL>
+      </rdf:Description>
+    </vcard:AUTOR>
   </rdf:Description>
-  <rdf:Description rdf:about="http://paper/RF_discharge_in">
-    <vcard:TITLE>RF discharge in the transverse magnetic field numerical model</vcard:TITLE>
-    <vcard:ABSTRACT>A numerical model of RF discharges in a steady transverse magnetic field is developed. This model is valid in a range of parameters (gas pressure, magnetic field, RF voltage) used in a number of experimental and technical installations. The comparison bet</vcard:ABSTRACT>
+  <rdf:Description rdf:about="http://paper/High-Quality,_Semi-Analytical_Volume_Rendering_for_AMR_Data">
+    <vcard:AUTOR>
+      <rdf:Description rdf:about="http://autor/Dr._Thiago_Hugo_Cervantes_Filho">
+        <vcard:NAME>Dr. Thiago Hugo Cervantes Filho</vcard:NAME>
+        <vcard:EMAIL>natalia.carrara@neves.net</vcard:EMAIL>
+      </rdf:Description>
+    </vcard:AUTOR>
+    <vcard:TITLE>High-Quality, Semi-Analytical Volume Rendering for AMR Data</vcard:TITLE>
+    <vcard:ABSTRACT>This paper presents a pipeline for high quality volume rendering of adaptive mesh refinement (AMR) datasets. We introduce a new method allowing high quality visualization of hexahedral cells in this context; this method avoids artifacts like discontinuiti</vcard:ABSTRACT>
+    <vcard:AUTOR>
+      <rdf:Description rdf:about="http://autor/Dr._Joaquin_Matias_da_Cruz">
+        <vcard:NAME>Dr. Joaquin Matias da Cruz</vcard:NAME>
+        <vcard:EMAIL>fernando53@hotmail.com</vcard:EMAIL>
+      </rdf:Description>
+    </vcard:AUTOR>
   </rdf:Description>
-  <rdf:Description rdf:about="http://paper/Control_strateg">
-    <vcard:TITLE>Control strategy of wind turbine based on permanent magnet synchronous generator and energy storage for stand-alone systems</vcard:TITLE>
-    <vcard:ABSTRACT>This paper investigates a variable speed wind turbine based on permanent magnet synchronous generator and a full-scale power converter in a stand-alone system. An energy storage system(ESS) including battery and fuel cell-electrolyzer combination is conne</vcard:ABSTRACT>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://paper/Study_of_NiZn_f">
-    <vcard:TITLE>Study of NiZn ferrite absorption: Effect of relative density and microstructure</vcard:TITLE>
-    <vcard:ABSTRACT>A study to optimize the reflectivity of ferrite absorbers is presented. The study considers the variation of the magnetic loss factor with the evolution of fired relative density and microstructure of ferrites made from a Zn-Ni-Cu ferrite powder, and from</vcard:ABSTRACT>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://paper/A_photovoltaic_">
+  <rdf:Description rdf:about="http://paper/A_photovoltaic_generation_system_based_on_wide_voltage-gain_DC-DC_converter_and_differential_power_processors_for_DC_microgrids">
+    <vcard:AUTOR>
+      <rdf:Description rdf:about="http://autor/Srta._Laura_Vale_Sobrinho">
+        <vcard:NAME>Srta. Laura Vale Sobrinho</vcard:NAME>
+        <vcard:EMAIL>noeli04@uol.com.br</vcard:EMAIL>
+      </rdf:Description>
+    </vcard:AUTOR>
+    <vcard:AUTOR>
+      <rdf:Description rdf:about="http://autor/Sr._Elias_Alonso_Branco">
+        <vcard:NAME>Sr. Elias Alonso Branco</vcard:NAME>
+        <vcard:EMAIL>luara.escobar@quintana.net.br</vcard:EMAIL>
+      </rdf:Description>
+    </vcard:AUTOR>
     <vcard:TITLE>A photovoltaic generation system based on wide voltage-gain DC-DC converter and differential power processors for DC microgrids</vcard:TITLE>
     <vcard:ABSTRACT>In this paper, a photovoltaic(PV) generation system based on front-stage differential power processors(DPP) and BACK-stage centralized wide voltage-gain converter is proposed. The resonant switched capacitor(ReSC) converter, which features high power dens</vcard:ABSTRACT>
+    <vcard:AUTOR rdf:resource="http://autor/Dr._Thiago_Hugo_Cervantes_Filho"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://paper/An_adaptive_cur">
-    <vcard:TITLE>An adaptive current control strategy for automotive HID lamps with full digital platform</vcard:TITLE>
-    <vcard:ABSTRACT>This paper presents an adaptive current control strategy for automotive HID lamps. The proposed control strategy realizes lamp voltage, current or power control only using current feedback control mode, which simplifies the control system and improves the</vcard:ABSTRACT>
+  <rdf:Description rdf:about="http://paper/Noncontact_ultrasonic_transportation_of_small_objects_in_a_circular_trajectory_in_air_by_flexural_vibrations_of_a_circular_disc">
+    <vcard:AUTOR rdf:resource="http://autor/Dr._Thiago_Hugo_Cervantes_Filho"/>
+    <vcard:AUTOR rdf:resource="http://autor/Dr._Joaquin_Matias_da_Cruz"/>
+    <vcard:TITLE>Noncontact ultrasonic transportation of small objects in a circular trajectory in air by flexural vibrations of a circular disc</vcard:TITLE>
+    <vcard:ABSTRACT>We have developed a noncontact ultrasonic technique for transporting small objects with a linear trajectory over long distances using a bending vibrating plate and a reflector. In this paper, noncontact transportation of small particles around a circular </vcard:ABSTRACT>
+    <vcard:AUTOR>
+      <rdf:Description rdf:about="http://autor/Sra._Carla_D&apos;ávila_Casanova">
+        <vcard:NAME>Sra. Carla D'ávila Casanova</vcard:NAME>
+        <vcard:EMAIL>furtado.sebastiao@delgado.net</vcard:EMAIL>
+      </rdf:Description>
+    </vcard:AUTOR>
   </rdf:Description>
-  <rdf:Description rdf:about="http://paper/A_Noninteractiv">
-    <vcard:TITLE>A Noninteractive Beam Position and Size Monitor for Heavy Ions</vcard:TITLE>
-    <vcard:ABSTRACT>The Ion Beam Fusion development program at Argonne National Laboratory requires noninteractive size measurements of a pulsed, 30 mA, Xe+l particle beam. Pulses of 100 &amp;#x003BC;s duration will be produced by the 1.5 MV preaccelerator; therefore, fast respo</vcard:ABSTRACT>
+  <rdf:Description rdf:about="http://paper/A_High_Spectral_Efficiency_Hybrid_ARQ_Protocol_with_Low_Latency">
+    <vcard:TITLE>A High Spectral Efficiency Hybrid ARQ Protocol with Low Latency</vcard:TITLE>
+    <vcard:ABSTRACT>Hybrid automatic repeat request (HARQ) is widely used in modern wireless communication systems to improve the spectral efficiency. However, the spectral efficiency improvement is at the cost of increased transmission delay. In this paper, we consider a HA</vcard:ABSTRACT>
+    <vcard:AUTOR rdf:resource="http://autor/Sra._Carla_D&apos;ávila_Casanova"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://paper/Focused_aperture_antenna_using_a_spherical_main_reflector_with_(Cassegrain)_convex_feed">
+    <vcard:TITLE>Focused aperture antenna using a spherical main reflector with (Cassegrain) convex feed</vcard:TITLE>
+    <vcard:ABSTRACT>A focused aperture antenna has been realised using a (Cassegrain) convex subreflector with a spherical main reflector. The design was based on geometrical optics, and good agreement was obtained between the measured and calculated field in the focal regio</vcard:ABSTRACT>
+    <vcard:AUTOR rdf:resource="http://autor/Dr._Joaquin_Matias_da_Cruz"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://paper/IEEE_Trial-Use_Standard_Definitions_for_the_Measurement_of_Electric_Power_Quantities_Under_Sinusoidal,_Non-sinusoidal,_Balanced,_Or_Unbalanced_Conditions">
+    <vcard:AUTOR rdf:resource="http://autor/Srta._Laura_Vale_Sobrinho"/>
+    <vcard:TITLE>IEEE Trial-Use Standard Definitions for the Measurement of Electric Power Quantities Under Sinusoidal, Non-sinusoidal, Balanced, Or Unbalanced Conditions</vcard:TITLE>
+    <vcard:ABSTRACT>This is a trial-use standard for definitions used for measurement of electric power quantities under sinusoidal, nonsinusoidal, balanced, or unbalanced conditions. It lists the mathematical expressions that were used in the past, as well as new expression</vcard:ABSTRACT>
+    <vcard:AUTOR rdf:resource="http://autor/Sr._Elias_Alonso_Branco"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://paper/Program">
+    <vcard:TITLE>Program</vcard:TITLE>
+    <vcard:ABSTRACT>Provides a schedule of conference events and a listing of which papers were presented in each session.</vcard:ABSTRACT>
+    <vcard:AUTOR rdf:resource="http://autor/Sr._Benjamin_Caldeira"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://paper/Frame_matching_for_human_identification">
+    <vcard:TITLE>Frame matching for human identification</vcard:TITLE>
+    <vcard:ABSTRACT>Gait recognition has become one of the common practices in multi-class human identification. It has led a research stream to explore the dynamics of an entire silhouette sequence. In this paper, a more intuitive human identification approach using direct </vcard:ABSTRACT>
+    <vcard:AUTOR rdf:resource="http://autor/Sr._Benjamin_Caldeira"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://paper/Suppression_of_wave_breaking_in_all_normal_dispersion_(ANDi)_fiber_laser_with_a_saturable_absorber_(SA)">
+    <vcard:TITLE>Suppression of wave breaking in all normal dispersion (ANDi) fiber laser with a saturable absorber (SA)</vcard:TITLE>
+    <vcard:ABSTRACT>Long-relaxation-time saturable absorber (SA) in ANDi cavity is demonstrated to suppress wave breaking against overlarge nonlinearity. Such SA has much smoother absorption profile than instant one, suppressing the iterative noise amplification and stabiliz</vcard:ABSTRACT>
+    <vcard:AUTOR rdf:resource="http://autor/Sra._Carla_D&apos;ávila_Casanova"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://paper/Language-based_generation_and_evaluation_of_NIDS_signatures">
+    <vcard:AUTOR rdf:resource="http://autor/Fábio_Paulo_Padrão"/>
+    <vcard:TITLE>Language-based generation and evaluation of NIDS signatures</vcard:TITLE>
+    <vcard:ABSTRACT>We present a methodology to automatically construct robust signatures whose accuracy is based on formal reasoning so it can be systematically evaluated. Our methodology is based on two formal languages that describe different properties of a given attack.</vcard:ABSTRACT>
+    <vcard:AUTOR rdf:resource="http://autor/Sr._Benjamin_Caldeira"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://paper/High_luminance_nano-structured_zinc_oxide_thin_film_fabrication">
+    <vcard:TITLE>High luminance nano-structured zinc oxide thin film fabrication</vcard:TITLE>
+    <vcard:ABSTRACT>ZnO nanorods were fabricated on as-deposited ZnO film with catalyst free method. The ZnO nanorods could be well-ordered with optimizing the parameters during radio frequency magnetron deposition and reducing annealing processed. The high blue-green photol</vcard:ABSTRACT>
+    <vcard:AUTOR rdf:resource="http://autor/Fábio_Paulo_Padrão"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://paper/Symbol_timing_synchronization_algorithm_for_112Gbit/s_PDM_CO-OFDM_systems">
+    <vcard:AUTOR rdf:resource="http://autor/Srta._Laura_Vale_Sobrinho"/>
+    <vcard:TITLE>Symbol timing synchronization algorithm for 112Gbit/s PDM CO-OFDM systems</vcard:TITLE>
+    <vcard:ABSTRACT>We propose a modified symbol timing synchronization algorithm for polarization division multiplexed (PDM) coherent optical orthogonal frequency division multiplexing (CO-OFDM) systems. This method can significantly reduce the impacts of the platform pheno</vcard:ABSTRACT>
+    <vcard:AUTOR rdf:resource="http://autor/Sr._Elias_Alonso_Branco"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://paper/Efficient_implementation_of_barrier_synchronization_in_wormhole-routed_hypercube_multicomputers">
+    <vcard:AUTOR rdf:resource="http://autor/Srta._Laura_Vale_Sobrinho"/>
+    <vcard:AUTOR rdf:resource="http://autor/Sr._Elias_Alonso_Branco"/>
+    <vcard:TITLE>Efficient implementation of barrier synchronization in wormhole-routed hypercube multicomputers</vcard:TITLE>
+    <vcard:ABSTRACT>Practical and efficient implementations of barrier synchronization for wormhole-routed hypercube multicomputers are presented. Both broadcast and multicast barrier synchronization are considered. For systems that do not support hardware broadcast or multi</vcard:ABSTRACT>
+    <vcard:AUTOR rdf:resource="http://autor/Dr._Thiago_Hugo_Cervantes_Filho"/>
   </rdf:Description>
 </rdf:RDF>

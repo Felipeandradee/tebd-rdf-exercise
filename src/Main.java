@@ -42,21 +42,36 @@ public class Main {
             Statement stmt = conn.createStatement();
             ResultSet rs;
 
-            rs = stmt.executeQuery("SELECT * FROM paper LIMIT 10");
+            rs = stmt.executeQuery(
+                    "SELECT distinct * " +
+                            "FROM paper as p " +
+                                "JOIN autor as a on a.idPaper = p.paperId " +
+                                "JOIN participant as par on par.registrationId = a.idParticipant " +
+                            "LIMIT 25;"
+            );
             while ( rs.next() ) {
 
+
                 String title = rs.getString("title");
+                String name = rs.getString("name");
+                String email = rs.getString("mail");
                 String _abstract = rs.getString("abstract");
-                String paperURI    = "http://paper/"+title.replace(' ', '_').substring(0,15);
+
+                String paperURI    = "http://paper/"+title.replace(' ', '_');
+                String autorURI    = "http://autor/"+name.replace(' ', '_');
 
                 // create an empty model
                 Model model = ModelFactory.createDefaultModel();
                 Property ABSTRACT = model.createProperty("http://www.w3.org/2001/vcard-rdf/3.0#", "ABSTRACT");
+                Property AUTOR = model.createProperty("http://www.w3.org/2001/vcard-rdf/3.0#","AUTOR");
 
                 Resource paper
                         = model.createResource(paperURI)
                         .addProperty(VCARD.TITLE, title)
-                        .addProperty(ABSTRACT, _abstract);
+                        .addProperty(ABSTRACT, _abstract)
+                        .addProperty(AUTOR, model.createResource(autorURI)
+                                .addProperty(VCARD.NAME, name)
+                                .addProperty(VCARD.EMAIL, email));
 
                 model_result.add(model);
             }
