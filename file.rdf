@@ -1,0 +1,44 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
+  <rdf:Description rdf:about="http://paper/30_&amp;#x003BC;_A_">
+    <vcard:TITLE>30 &amp;#x003BC; A beam toroid</vcard:TITLE>
+    <vcard:ABSTRACT>A standard commercial toroid modified to operate in the zero flux mode has been applied to the monitoring of the 750 keV polarized proton beam at the Zero Gradient Synchrotron (ZGS). The beam parameters are: rise time - 3 ms, pulse width - 15 ms, current </vcard:ABSTRACT>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://paper/Applying_AHP_me">
+    <vcard:TITLE>Applying AHP method select online shopping platform</vcard:TITLE>
+    <vcard:ABSTRACT>This paper proposes a case of the traditional market retailers in central Taiwan. Applying Analytical Hierarchy Process (AHP) method is to find the best online shopping platform to begin e-commerce. Traditional retail market is usually the purchase store </vcard:ABSTRACT>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://paper/A_simple_dimmer">
+    <vcard:TITLE>A simple dimmer using a MOSFET for AC driven lamp</vcard:TITLE>
+    <vcard:ABSTRACT>This paper presents a simple dimmer using a MOSFET for AC driven lamp such as AC LED and incandescent lamp. The control method of the proposed dimmer is pulse width control (PWM) method. Compared with the conventional phase-controlled dimmer, the proposed</vcard:ABSTRACT>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://paper/Evaluating_the_">
+    <vcard:TITLE>Evaluating the potential shielding properties of periodic metamaterial slabs</vcard:TITLE>
+    <vcard:ABSTRACT>Metamaterials can prove to be good candidates for shields in EMC applications where weight reduction is a challenge. Indeed metamaterial slabs can provide the same reflective properties as conventional metallic screens but with a lower density and reduced</vcard:ABSTRACT>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://paper/RF_discharge_in">
+    <vcard:TITLE>RF discharge in the transverse magnetic field numerical model</vcard:TITLE>
+    <vcard:ABSTRACT>A numerical model of RF discharges in a steady transverse magnetic field is developed. This model is valid in a range of parameters (gas pressure, magnetic field, RF voltage) used in a number of experimental and technical installations. The comparison bet</vcard:ABSTRACT>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://paper/Control_strateg">
+    <vcard:TITLE>Control strategy of wind turbine based on permanent magnet synchronous generator and energy storage for stand-alone systems</vcard:TITLE>
+    <vcard:ABSTRACT>This paper investigates a variable speed wind turbine based on permanent magnet synchronous generator and a full-scale power converter in a stand-alone system. An energy storage system(ESS) including battery and fuel cell-electrolyzer combination is conne</vcard:ABSTRACT>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://paper/Study_of_NiZn_f">
+    <vcard:TITLE>Study of NiZn ferrite absorption: Effect of relative density and microstructure</vcard:TITLE>
+    <vcard:ABSTRACT>A study to optimize the reflectivity of ferrite absorbers is presented. The study considers the variation of the magnetic loss factor with the evolution of fired relative density and microstructure of ferrites made from a Zn-Ni-Cu ferrite powder, and from</vcard:ABSTRACT>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://paper/A_photovoltaic_">
+    <vcard:TITLE>A photovoltaic generation system based on wide voltage-gain DC-DC converter and differential power processors for DC microgrids</vcard:TITLE>
+    <vcard:ABSTRACT>In this paper, a photovoltaic(PV) generation system based on front-stage differential power processors(DPP) and BACK-stage centralized wide voltage-gain converter is proposed. The resonant switched capacitor(ReSC) converter, which features high power dens</vcard:ABSTRACT>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://paper/An_adaptive_cur">
+    <vcard:TITLE>An adaptive current control strategy for automotive HID lamps with full digital platform</vcard:TITLE>
+    <vcard:ABSTRACT>This paper presents an adaptive current control strategy for automotive HID lamps. The proposed control strategy realizes lamp voltage, current or power control only using current feedback control mode, which simplifies the control system and improves the</vcard:ABSTRACT>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://paper/A_Noninteractiv">
+    <vcard:TITLE>A Noninteractive Beam Position and Size Monitor for Heavy Ions</vcard:TITLE>
+    <vcard:ABSTRACT>The Ion Beam Fusion development program at Argonne National Laboratory requires noninteractive size measurements of a pulsed, 30 mA, Xe+l particle beam. Pulses of 100 &amp;#x003BC;s duration will be produced by the 1.5 MV preaccelerator; therefore, fast respo</vcard:ABSTRACT>
+  </rdf:Description>
+</rdf:RDF>
