@@ -11,10 +11,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 
 public class Main {
 
@@ -26,41 +23,49 @@ public class Main {
         if(CreateRDFFile()){
             System.out.println("created RDF file.");
         }
+
         ReadRDFFile("file.rdf");
 
     }
 
+    public static java.sql.ResultSet SearchMySQL() throws SQLException {
+        DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+        String url = "jdbc:mysql://127.0.0.1:3306/congress";
+        Connection conn = DriverManager.getConnection(url,"root","");
+        Statement stmt = conn.createStatement();
+
+        return stmt.executeQuery(
+                "SELECT distinct * " +
+                        "FROM paper as p " +
+                        "JOIN autor as a on a.idPaper = p.paperId " +
+                        "JOIN participant as par on par.registrationId = a.idParticipant " +
+                        "LIMIT 25;"
+        );
+    }
+
     public static boolean CreateRDFFile() throws FileNotFoundException {
 
-        // create an empty model
+        // create an empty model for result
         Model model_result = ModelFactory.createDefaultModel();
 
         try {
-            DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-            String url = "jdbc:mysql://127.0.0.1:3306/congress";
-            Connection conn = DriverManager.getConnection(url,"root","");
-            Statement stmt = conn.createStatement();
-            ResultSet rs;
 
-            rs = stmt.executeQuery(
-                    "SELECT distinct * " +
-                            "FROM paper as p " +
-                                "JOIN autor as a on a.idPaper = p.paperId " +
-                                "JOIN participant as par on par.registrationId = a.idParticipant " +
-                            "LIMIT 25;"
-            );
+            // Getting information in MySQL for create RDF Models
+            java.sql.ResultSet rs = SearchMySQL();
+
             while ( rs.next() ) {
 
-
+                //Paper
                 String title = rs.getString("title");
+                String _abstract = rs.getString("abstract");
+                String paperURI    = "http://paper/"+title.replace(' ', '_');
+
+                //Autor
                 String name = rs.getString("name");
                 String email = rs.getString("mail");
-                String _abstract = rs.getString("abstract");
-
-                String paperURI    = "http://paper/"+title.replace(' ', '_');
                 String autorURI    = "http://autor/"+name.replace(' ', '_');
 
-                // create an empty model
+                // create an empty model for each
                 Model model = ModelFactory.createDefaultModel();
                 Property ABSTRACT = model.createProperty("http://www.w3.org/2001/vcard-rdf/3.0#", "ABSTRACT");
                 Property AUTOR = model.createProperty("http://www.w3.org/2001/vcard-rdf/3.0#","AUTOR");
@@ -75,8 +80,8 @@ public class Main {
 
                 model_result.add(model);
             }
-            conn.close();
 
+            // Saving generated models in a RDF file
             OutputStream out = new FileOutputStream("file.rdf");
             model_result.write(out, "RDF/XML-ABBREV");
             return true;
@@ -87,6 +92,30 @@ public class Main {
             return false;
         }
 
+    }
+
+    public static org.apache.jena.query.ResultSet SelectAutor(Model model){
+
+        String queryString =
+                "PREFIX p: <" + VCARD.getURI() + "> " +
+                        "SELECT * "+
+                        "WHERE {?autor p:AUTOR ?name} ";
+
+        Query query = QueryFactory.create(queryString);
+        QueryExecution qexec = QueryExecutionFactory.create(query, model) ;
+        return qexec.execSelect();
+    }
+
+    public static org.apache.jena.query.ResultSet SelectDistinctAutorName(Model model){
+
+        String queryString =
+                "PREFIX p: <" + VCARD.getURI() + "> " +
+                        "SELECT DISTINCT ?name "+
+                        "WHERE {?autor p:AUTOR ?name} ";
+
+        Query query = QueryFactory.create(queryString);
+        QueryExecution qexec = QueryExecutionFactory.create(query, model) ;
+        return qexec.execSelect();
     }
 
     public static void ReadRDFFile(String inputFileName){
@@ -103,19 +132,16 @@ public class Main {
         // read the RDF/XML file
         model.read(in, null);
 
-        // List all the resources with the property "vcard:FN"
-        String queryString =
-                "PREFIX vcard: <" + VCARD.getURI() + "> " +
-                        "SELECT ?title "+
-                        "WHERE { ?paper vcard:TITLE ?title.} ";
-        Query query = QueryFactory.create(queryString);
-        QueryExecution qexec = QueryExecutionFactory.create(query, model) ;
-        org.apache.jena.query.ResultSet results = qexec.execSelect();
-
-        while (results.hasNext())
-        {
+        System.out.println("\n\nSelect example in Autor");
+        org.apache.jena.query.ResultSet results = SelectAutor(model);
+        while (results.hasNext()){
             System.out.println(results.nextSolution().toString());
+        }
 
+        System.out.println("\n\nDistinct example in Autor");
+        results = SelectDistinctAutorName(model);
+        while (results.hasNext()){
+            System.out.println(results.nextSolution().toString());
         }
 
     }
